@@ -7,7 +7,7 @@ Model classes for writing wykop.pl/microblog based java apps
 <repositories>
     <repository>
         <id>keeper-client-mvn-repository</id>
-        <url>https://raw.github.com/tomekbielaszewski/keeper-client/mvn-repo/</url>
+        <url>https://raw.github.com/tomekbielaszewski/microblog-model/mvn-repo/</url>
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
