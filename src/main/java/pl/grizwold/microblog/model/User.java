@@ -4,6 +4,8 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 public class User {
@@ -26,4 +28,6 @@ public class User {
 
     @SerializedName("author_avatar_lo")
     private String authorAvatarLow;
+
+    private LocalDateTime date;
 }

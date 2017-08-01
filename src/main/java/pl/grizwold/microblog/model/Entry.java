@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -37,7 +37,7 @@ public class Entry implements MicroblogContent {
     private String app;
 
     @SerializedName("date")
-    private Date dateAdded;
+    private LocalDateTime dateAdded;
 
     private Embed embed;
 

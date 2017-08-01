@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -35,7 +35,7 @@ public class EntryComment implements MicroblogContent {
     private String app;
 
     @SerializedName("date")
-    private Date dateAdded;
+    private LocalDateTime dateAdded;
 
     private Embed embed;
 

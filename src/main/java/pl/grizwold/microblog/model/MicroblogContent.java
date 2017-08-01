@@ -1,6 +1,6 @@
 package pl.grizwold.microblog.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface MicroblogContent {
@@ -22,7 +22,7 @@ public interface MicroblogContent {
 
     String getApp();
 
-    Date getDateAdded();
+    LocalDateTime getDateAdded();
 
     Embed getEmbed();
 
