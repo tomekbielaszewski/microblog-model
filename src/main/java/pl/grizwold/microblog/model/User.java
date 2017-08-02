@@ -3,8 +3,7 @@ package pl.grizwold.microblog.model;
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
-
-import java.time.LocalDateTime;
+import org.joda.time.DateTime;
 
 @Data
 @Builder
@@ -29,5 +28,5 @@ public class User {
     @SerializedName("author_avatar_lo")
     private String authorAvatarLow;
 
-    private LocalDateTime date;
+    private DateTime date;
 }

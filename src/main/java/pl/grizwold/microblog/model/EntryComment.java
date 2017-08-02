@@ -3,9 +3,11 @@ package pl.grizwold.microblog.model;
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
+import org.joda.time.DateTime;
+import pl.grizwold.microblog.helper.TagExtractor;
 
-import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @Builder
@@ -35,7 +37,7 @@ public class EntryComment implements MicroblogContent {
     private String app;
 
     @SerializedName("date")
-    private LocalDateTime dateAdded;
+    private DateTime dateAdded;
 
     private Embed embed;
 
@@ -54,4 +56,8 @@ public class EntryComment implements MicroblogContent {
     private EntryType type;
 
     private boolean deleted;
+
+    public Set<Tag> getTags() {
+        return new TagExtractor().extract(this.getBody());
+    }
 }

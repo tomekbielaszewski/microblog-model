@@ -1,7 +1,9 @@
 package pl.grizwold.microblog.model;
 
-import java.time.LocalDateTime;
+import org.joda.time.DateTime;
+
 import java.util.List;
+import java.util.Set;
 
 public interface MicroblogContent {
     Long getId();
@@ -22,7 +24,7 @@ public interface MicroblogContent {
 
     String getApp();
 
-    LocalDateTime getDateAdded();
+    DateTime getDateAdded();
 
     Embed getEmbed();
 
@@ -33,6 +35,8 @@ public interface MicroblogContent {
     int getVoteCount();
 
     List<User> getVoters();
+
+    Set<Tag> getTags();
 
     EntryType getType();
 
