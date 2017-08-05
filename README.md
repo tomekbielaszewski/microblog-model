@@ -1,4 +1,4 @@
-# microblog-model
+# microblog-model [![Build Status](https://travis-ci.org/tomekbielaszewski/microblog-model.svg)](https://travis-ci.org/tomekbielaszewski/microblog-model)
 
 Model classes for writing wykop.pl/microblog based java apps
 
