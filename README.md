@@ -25,5 +25,21 @@ Model classes for writing wykop.pl/microblog based java apps
 ```
 
 ## Deployment
+1. Create file `settings.xml` in `~/.m2` folder with following content:
+    ```xml
+    <settings>
+    ...
+      <servers>
+    ...
+        <server>
+          <id>github</id>
+          <username>username</username>
+          <password>password</password>
+        </server>
+    ...
+      </servers>
+    ...
+    </settings>
+    ```
 1. Create empty branch `mvn-repo`
 1. run `mvn clean deploy`
