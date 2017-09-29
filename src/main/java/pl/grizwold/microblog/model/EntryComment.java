@@ -51,7 +51,7 @@ public class EntryComment implements MicroblogContent {
     private List<User> voters;
 
     @SerializedName("entry_id")
-    private int entryId;
+    private Long entryId;
 
     private EntryType type;
 
